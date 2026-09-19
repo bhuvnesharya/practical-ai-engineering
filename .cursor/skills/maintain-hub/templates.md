@@ -1,50 +1,38 @@
 # Templates
 
-Keep heading order. Replace `TODO`.
+## Learn domain and practice folio
 
-## Learn domain (`learn/<domain-id>.md`)
+Unchanged: chapter rows and five domain links. See existing `learn/` and `practice/` files.
 
-```markdown
-# TODO: display name
-
-**Domain:** `TODO-id`  
-**All chapters in this domain:** https://insightveda.com/chapters?domain=TODO-id  
-**Practice (live folio):** https://insightveda.com/scenarios?set=TODO-folio&domain=TODO-id
-
-| Chapter | Open |
-| --- | --- |
-| TODO title | https://insightveda.com/chapters?chapter=TODO-chapter-id |
-```
-
-Add one table row per new chapter. Never a new file per chapter body.
-
-## Practice folio (`practice/<folio-id>.md`)
+## Topic (`topics/<slug>.md`)
 
 ```markdown
-# TODO: folio name
+# TODO: topic title
 
-**Status:** live | earlier | coming soon  
-**Line:** TODO  
-**Whole set:** https://insightveda.com/scenarios?set=TODO-folio-id
+One paragraph. Can be a single video.
 
-| Domain | Open this folio in this domain |
-| --- | --- |
-| Agents & orchestration | https://insightveda.com/scenarios?set=TODO-folio-id&domain=agentic-architecture |
-| Data & knowledge | https://insightveda.com/scenarios?set=TODO-folio-id&domain=data-knowledge |
-| Tools & integrations | https://insightveda.com/scenarios?set=TODO-folio-id&domain=tools-integrations |
-| Prompts & outputs | https://insightveda.com/scenarios?set=TODO-folio-id&domain=prompting-output |
-| Security & guardrails | https://insightveda.com/scenarios?set=TODO-folio-id&domain=security-guardrails |
+## Videos
+
+1. [TODO](../videos/TODO.md)
+
+## Roadmap
+
+[TODO](../roadmaps/TODO.md) if one exists
+
+## Learn / Practice
+
+- https://insightveda.com/chapters?domain=TODO
+- https://insightveda.com/scenarios?set=TODO
 ```
-
-No per-scenario files.
 
 ## Video (`videos/<slug>.md`)
 
 ```markdown
 # TODO: YouTube title
 
-**Watch:** [TODO](https://www.youtube.com/watch?v=TODO) · TODO: YYYY-MM-DD  
-**Series:** [TODO](../series/TODO.md)
+**Watch:** [TODO](https://www.youtube.com/watch?v=TODO) · YYYY-MM-DD  
+**Topic:** [TODO](../topics/TODO.md)  
+**Roadmap:** [TODO](../roadmaps/TODO.md)
 
 ## In this video
 
@@ -52,9 +40,29 @@ No per-scenario files.
 
 ## Learn
 
-- [TODO chapter](https://insightveda.com/chapters?chapter=TODO)
+- [TODO](https://insightveda.com/chapters?chapter=TODO)
 
 ## Practice
 
-- [TODO folio × domain](https://insightveda.com/scenarios?set=TODO&domain=TODO)
+- [TODO](https://insightveda.com/scenarios?set=TODO&domain=TODO)
 ```
+
+## Roadmap (`roadmaps/<name>.md`)
+
+```markdown
+# TODO title
+
+One sentence outcome.
+
+![TODO](img/TODO.svg)
+
+## Step 1 — TODO
+
+What you can ship. What still fails.
+
+**Read:** Insight Veda chapter URL or "none yet"  
+**Practice:** folio x domain URL or "none yet"  
+**Watch:** video URL if it exists
+```
+
+Five steps. Production is usually Step 5. SVG is 1920x1080, five boxes, same palette as existing `img/` files.

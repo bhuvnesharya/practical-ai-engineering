@@ -1,13 +1,14 @@
-# Agentic AI System Design, Part 2: Memory, Auth, PII, Evals, and Observability
+# Agentic AI system design, Part 2: Memory, Auth, PII, Evals, and Observability
 
 **Watch:** add the YouTube URL · 2026-09-19  
-**Series:** [Agentic AI System Design](../series/agentic-ai-system-design.md)
+**Topic:** [Agentic AI system design](../topics/agentic-ai-system-design.md)  
+**Roadmap:** [Agentic AI](../roadmaps/agentic-ai.md)
 
 Status: URL pending.
 
 ## In this video
 
-- Memory for RF-2291, then Payments
+- Load the last case, then refresh payments
 - Authentication and authorization (the model is not the security boundary)
 - PII masking; company LLM first
 - Golden-set evals; traces, monitoring, cost cap
@@ -21,10 +22,6 @@ Status: URL pending.
 
 - [Brass Vernier · Security & guardrails](https://insightveda.com/scenarios?set=brass-vernier&domain=security-guardrails)
 - [Brass Vernier · Data & knowledge](https://insightveda.com/scenarios?set=brass-vernier&domain=data-knowledge)
-
-## Teaching world
-
-- [Fictional Bazaar](./worlds/fictional-bazaar.md)
 
 ## Next
 

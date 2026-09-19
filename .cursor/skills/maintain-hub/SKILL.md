@@ -1,10 +1,10 @@
 ---
 name: maintain-hub
 description: >-
-  Maintains the public Practical AI Engineering map: YouTube pages, Insight Veda
-  Learn chapter rows, Practice folio pages (domain links only), and CONNECT.
-  Use when a chapter or folio ships, a video ships, or the user asks to update
-  this repository. Do not create one file per practice scenario.
+  Maintains the public Practical AI Engineering map: YouTube video pages,
+  Insight Veda chapter rows, folio pages, system-design topics, and five-step
+  roadmaps with SVG diagrams. Use when a chapter, folio, video, topic, or
+  roadmap ships. Do not create per-scenario files or a worlds folder.
 ---
 
 # Maintain the hub
@@ -14,41 +14,44 @@ Read [templates.md](templates.md) and [conventions.md](conventions.md).
 ## Shape
 
 ```
-learn/<domain-id>.md          chapter name + /chapters?chapter=id
-practice/<folio-id>.md        five rows: /scenarios?set=folio&domain=id
-videos/ + series/             YouTube
+learn/<domain-id>.md
+practice/<folio-id>.md
+topics/<topic-slug>.md          one video or several parts (MCP, RAG, Agentic, ...)
+videos/<slug>.md
+roadmaps/<name>.md              Step 1-5 + img/<name>.svg (1920x1080)
 ```
 
-Domain ids (must match Insight Veda): `agentic-architecture`, `data-knowledge`, `tools-integrations`, `prompting-output`, `security-guardrails`.
+Domain ids: `agentic-architecture`, `data-knowledge`, `tools-integrations`, `prompting-output`, `security-guardrails`.
 
 ## Decide the artifact
 
 | User intent | Do this |
 | --- | --- |
-| New chapter (usual: one per new folio, in a domain) | Add a row to `learn/<domain>.md`. Update What’s new. |
-| New folio | Add `practice/<folio-id>.md` with five domain links. List it on `practice/README.md` (live first). Add the matching chapter row(s). |
-| New YouTube video | `videos/<slug>.md` + series + What’s new. Point Learn/Practice at chapter and folio **URLs**, not private decks. |
-| YouTube world | `videos/worlds/<slug>.md` |
+| New chapter | Row on `learn/<domain>.md` |
+| New folio | `practice/<folio>.md` with five domain links |
+| New YouTube video | `videos/<slug>.md` + `topics/<slug>.md` (create or append). Optional: link a roadmap |
+| New roadmap | `roadmaps/<name>.md` Steps 1-5, SVG in `roadmaps/img/`, Insight Veda links where they exist |
 | Profile change | `CONNECT.md` |
 
-**Never** add `practice/.../01-some-case.md`. The site already lists the five cases when you open `set` + `domain`.
+Never: per-scenario files, `/learn` or `/practice` site paths, private GitHub, `videos/worlds/`.
 
 ## Insight Veda URLs
 
 | What | Pattern |
 | --- | --- |
 | All chapters | `https://insightveda.com/chapters` |
-| Domain chapters | `https://insightveda.com/chapters?domain=<domain-id>` |
-| One chapter | `https://insightveda.com/chapters?chapter=<chapter-id>` |
-| All sets | `https://insightveda.com/scenarios` |
-| One folio | `https://insightveda.com/scenarios?set=<folio-id>` |
-| Folio × domain | `https://insightveda.com/scenarios?set=<folio-id>&domain=<domain-id>` |
+| Domain chapters | `https://insightveda.com/chapters?domain=<id>` |
+| One chapter | `https://insightveda.com/chapters?chapter=<id>` |
+| One folio | `https://insightveda.com/scenarios?set=<id>` |
+| Folio × domain | `https://insightveda.com/scenarios?set=<id>&domain=<id>` |
 
-There is no `/learn` or `/practice` path. Do not invent them.
+## Roadmap diagrams
+
+Navy `#0B1220`, boxes `#1A2438`, teal `#3D9B8F`, muted `#8B97AD`. Five boxes, short labels, no clip-art, no hype words. Same SVG on GitHub and as a video slide.
 
 ## Checks
 
-- [ ] No per-scenario GitHub files
-- [ ] No `/learn` or `/practice` links
-- [ ] No private GitHub repos
-- [ ] Chapter and folio ids copied from Insight Veda, not guessed
+- [ ] No per-scenario files, no worlds folder
+- [ ] Topics, not “series required”
+- [ ] Roadmaps are five steps max
+- [ ] No private repos

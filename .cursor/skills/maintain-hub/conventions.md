@@ -2,10 +2,10 @@
 
 ## Public map
 
-GitHub is an index. Insight Veda holds chapters and cases.
-
-- Learn: https://insightveda.com/chapters
-- Practice: https://insightveda.com/scenarios
+- Chapters: https://insightveda.com/chapters
+- Scenarios: https://insightveda.com/scenarios
+- Topics: system design videos (`topics/`). MCP, RAG, Agentic all fit. Multi-part is optional.
+- Roadmaps: Step 1–5 in `roadmaps/`. Diagrams in `roadmaps/img/`.
 
 ## Domain ids
 
@@ -19,14 +19,12 @@ GitHub is an index. Insight Veda holds chapters and cases.
 
 ## Growth
 
-Each new live folio: one chapter row in the matching domain file, plus one folio markdown with five domain links. Older folios stay listed.
+New folio: one chapter row + one folio page with five links.  
+New video: topic page (create if needed).  
+New roadmap video: reuse the existing SVG; do not redraw a denser map.
 
-Do not catalog individual scenarios. Do not paste chapter bodies.
-
-## Public URLs only
-
-No private studio repos. YouTube only with a real watch URL.
+No `worlds/` folder. A worked example stays inside the video page.
 
 ## Out of scope
 
-Other people’s courses, interview banks, certifications, paper feeds.
+Other people’s course lists, interview banks, day-by-day study plans copied from elsewhere.

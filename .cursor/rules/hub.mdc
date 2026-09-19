@@ -1,5 +1,5 @@
 ---
-description: Public map of Insight Veda chapters and folios plus YouTube. No per-scenario files. No private repos.
+description: Public map of chapters, folios, topics, and five-step roadmaps. No worlds folder. No private repos.
 alwaysApply: true
 ---
 
@@ -7,4 +7,4 @@ alwaysApply: true
 
 Follow `AGENTS.md` and `.cursor/skills/maintain-hub/SKILL.md`.
 
-Learn URLs use `/chapters`. Practice URLs use `/scenarios`. Never add a GitHub page per practice case. Never link private studio repos.
+`topics/` holds system-design videos (one-off or multi-part). `roadmaps/` holds Step 1–5 paths plus `img/` SVGs for GitHub and YouTube. Never add a worlds folder. Never list every practice case.

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#0B1220"/>
+  <text x="80" y="72" fill="#3D9B8F" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="18" letter-spacing="3">ROADMAP</text>
+  <text x="80" y="128" fill="#E8EEF8" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="40" font-weight="600">Generative AI</text>
+  <text x="80" y="176" fill="#8B97AD" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="22">Five steps from a prompt to a system you can run.</text>
+
+  <g font-family="IBM Plex Sans, Segoe UI, sans-serif">
+    <rect x="80" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#8B97AD"/>
+    <text x="230" y="430" text-anchor="middle" fill="#3D9B8F" font-size="14" letter-spacing="2">STEP 1</text>
+    <text x="230" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Prompt</text>
+    <text x="230" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Output contract</text>
+    <text x="230" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Structured reply</text>
+
+    <rect x="440" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#3D9B8F"/>
+    <text x="590" y="430" text-anchor="middle" fill="#3D9B8F" font-size="14" letter-spacing="2">STEP 2</text>
+    <text x="590" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Tools</text>
+    <text x="590" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Live facts</text>
+    <text x="590" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Named APIs</text>
+
+    <rect x="800" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#3D9B8F"/>
+    <text x="950" y="430" text-anchor="middle" fill="#3D9B8F" font-size="14" letter-spacing="2">STEP 3</text>
+    <text x="950" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">RAG</text>
+    <text x="950" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Your documents</text>
+    <text x="950" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Grounded text</text>
+
+    <rect x="1160" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#5B8DEF"/>
+    <text x="1310" y="430" text-anchor="middle" fill="#5B8DEF" font-size="14" letter-spacing="2">STEP 4</text>
+    <text x="1310" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Agents</text>
+    <text x="1310" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Loop when needed</text>
+    <text x="1310" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Human on money</text>
+
+    <rect x="1520" y="380" width="320" height="280" rx="16" fill="#1A2438" stroke="#D4A054"/>
+    <text x="1680" y="430" text-anchor="middle" fill="#D4A054" font-size="14" letter-spacing="2">STEP 5</text>
+    <text x="1680" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Production</text>
+    <text x="1680" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Identity, evals</text>
+    <text x="1680" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Observe, cost</text>
+  </g>
+
+  <path d="M380,520 L428,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
+  <path d="M740,520 L788,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
+  <path d="M1100,520 L1148,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
+  <path d="M1460,520 L1508,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
+
+  <text x="80" y="980" fill="#8B97AD" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="22">Skip a step only if that capability already lives in your system.</text>
+</svg>
