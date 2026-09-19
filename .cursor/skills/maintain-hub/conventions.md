@@ -19,11 +19,13 @@
 
 ## Growth
 
-New folio: one chapter row + one folio page with five links.  
-New video: topic page (create if needed).  
-New roadmap video: reuse the existing SVG; do not redraw a denser map.
+Chapters accumulate **inside a domain** (RAG lessons stack in Data & knowledge). They are not 1:1 with a folio.
 
-No `worlds/` folder. A worked example stays inside the video page.
+Practice is **folio × domain**, not “after this chapter.”
+
+New folio: `practice/<folio>.md` with five domain links. New RAG lesson: row on `learn/data-knowledge.md` and a bullet on `references/rag-chapters.md`.
+
+No `worlds/` folder.
 
 ## Out of scope
 

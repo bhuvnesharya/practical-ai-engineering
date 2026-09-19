@@ -1,8 +1,8 @@
 # Security & guardrails
 
-**Domain:** `security-guardrails`  
-**All chapters in this domain:** https://insightveda.com/chapters?domain=security-guardrails  
-**Practice (live folio):** https://insightveda.com/scenarios?set=brass-vernier&domain=security-guardrails
+Identity, authorization, PII, and controls that are not “the model will be careful.”
+
+Chapters ([link](https://insightveda.com/chapters?domain=security-guardrails)). Practice this domain ([link](https://insightveda.com/scenarios?set=brass-vernier&domain=security-guardrails)).
 
 | Chapter | Open |
 | --- | --- |

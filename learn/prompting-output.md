@@ -1,8 +1,8 @@
 # Prompts & outputs
 
-**Domain:** `prompting-output`  
-**All chapters in this domain:** https://insightveda.com/chapters?domain=prompting-output  
-**Practice (live folio):** https://insightveda.com/scenarios?set=brass-vernier&domain=prompting-output
+Instructions, structured output, and what belongs in the prompt versus the system.
+
+Chapters ([link](https://insightveda.com/chapters?domain=prompting-output)). Practice this domain ([link](https://insightveda.com/scenarios?set=brass-vernier&domain=prompting-output)).
 
 | Chapter | Open |
 | --- | --- |

@@ -27,7 +27,7 @@ Domain ids: `agentic-architecture`, `data-knowledge`, `tools-integrations`, `pro
 
 | User intent | Do this |
 | --- | --- |
-| New chapter | Row on `learn/<domain>.md` |
+| New chapter | Row on `learn/<domain>.md`. If it is on the RAG path, also a bullet on `references/rag-chapters.md` |
 | New folio | `practice/<folio>.md` with five domain links |
 | New YouTube video | `videos/<slug>.md` + `topics/<slug>.md` (create or append). Optional: link a roadmap |
 | New roadmap | `roadmaps/<name>.md` like RAG. Teach, then `Topic ([link](url))`. Best write-up first. Papers in `references/`. |

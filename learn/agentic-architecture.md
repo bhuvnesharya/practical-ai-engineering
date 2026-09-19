@@ -1,8 +1,8 @@
 # Agents & orchestration
 
-**Domain:** `agentic-architecture`  
-**All chapters in this domain:** https://insightveda.com/chapters?domain=agentic-architecture  
-**Practice (live folio):** https://insightveda.com/scenarios?set=brass-vernier&domain=agentic-architecture
+Agents, handoffs, approval gates, and multi-agent workflows.
+
+Chapters ([link](https://insightveda.com/chapters?domain=agentic-architecture)). Practice this domain ([link](https://insightveda.com/scenarios?set=brass-vernier&domain=agentic-architecture)).
 
 | Chapter | Open |
 | --- | --- |

@@ -1,8 +1,8 @@
 # Tools & integrations
 
-**Domain:** `tools-integrations`  
-**All chapters in this domain:** https://insightveda.com/chapters?domain=tools-integrations  
-**Practice (live folio):** https://insightveda.com/scenarios?set=brass-vernier&domain=tools-integrations
+Named tools, APIs, and what the chat is allowed to call.
+
+Chapters ([link](https://insightveda.com/chapters?domain=tools-integrations)). Practice this domain ([link](https://insightveda.com/scenarios?set=brass-vernier&domain=tools-integrations)).
 
 | Chapter | Open |
 | --- | --- |
