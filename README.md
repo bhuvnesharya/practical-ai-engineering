@@ -17,7 +17,7 @@ This GitHub repo is the **public map**. Full chapters and cases live on [Insight
 
 ## What's new
 
-- **Roadmaps** — [RAG](roadmaps/rag.md) rewritten for GitHub (paper diagram, beginner steps, public links). Agentic / Gen AI still pending the same treatment.
+- **Roadmaps** — [RAG](roadmaps/rag.md) as a reading path; [RAG papers](references/rag-papers.md) as a short living table. See [CONTRIBUTING.md](CONTRIBUTING.md).
 - **2026-09-19** — [Agentic AI system design, Part 2](videos/agentic-ai-system-design-part-2.md)
 - **2026-09** — [Agentic AI system design, Part 1](videos/agentic-ai-system-design-part-1.md)
 
@@ -26,7 +26,7 @@ This GitHub repo is the **public map**. Full chapters and cases live on [Insight
 - **Learn:** domain → chapter name → `/chapters?chapter=…`
 - **Practice:** folio → domain → `/scenarios?set=…&domain=…`
 - **Topics:** one page per system-design video (or a small set of parts). Not everything is Part 1 / Part 2.
-- **Roadmaps:** five steps. Link Insight Veda when a step already exists. Do not list every practice case.
+- **Roadmaps:** five steps that teach, then `Topic ([link](url))`. Papers in `references/`. Contributions: [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Connect
 

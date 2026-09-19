@@ -51,23 +51,15 @@ One paragraph. Can be a single video.
 
 Follow [library/github-visuals.md](../../../library/github-visuals.md) for the SVG. Do not copy YouTube deck colors.
 
-Explain each step for a beginner. Then **Links** (public articles, papers, docs first). Insight Veda is optional and must be the **domain** (`/chapters?domain=`), never a single chapter and never Practice.
+Explain each step for a beginner. Then **Links** as `Title ([link](url))` — not the whole line as a hyperlink, not a brand name.
+
+If a public chapter on insightveda.com is the clearest write-up for that step, put it first, titled as the topic (e.g. Chunking and overlap). Papers belong in `references/` and are cited as `RAG papers ([link](../references/rag-papers.md))`.
 
 ```markdown
-# TODO title
-
-Beginner intro. What problem this roadmap solves.
-
-![TODO](img/TODO.svg)
-
-## Step 1 — TODO
-
-A few short paragraphs. What it is. What goes wrong if you skip it.
-
 **Links**
 
-- [Public resource](https://...)
-- Insight Veda: [Domain name](https://insightveda.com/chapters?domain=TODO)
+1. Chunking and overlap ([link](https://insightveda.com/chapters?chapter=ch-chunking-overlap))
+2. RAG papers ([link](../references/rag-papers.md))
 ```
 
-Five steps. See `roadmaps/rag.md` as the current example. Do not add Practice rows.
+See `roadmaps/rag.md`. No Practice. No “Insight Veda:” labels. Vendor blogs are last resort; see CONTRIBUTING.md.

@@ -1,8 +1,10 @@
 # Roadmaps
 
-Five-step paths to systems you can run. Explain the step, then list a few public links. Insight Veda, when listed, is one link among others (the domain, not a single chapter).
+Five-step paths. The page teaches the step. Extra reading uses `Title ([link](url))` — papers, docs, or a chapter named by **topic**, not by a product.
 
-GitHub diagrams use [library/github-visuals.md](../library/github-visuals.md). They are not YouTube slides.
+Paper lists live under [references/](../references/README.md). GitHub diagrams use [library/github-visuals.md](../library/github-visuals.md), not YouTube slides.
+
+PRs: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
 | Roadmap | What it gets you to |
 | --- | --- |

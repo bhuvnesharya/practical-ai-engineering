@@ -30,7 +30,8 @@ Domain ids: `agentic-architecture`, `data-knowledge`, `tools-integrations`, `pro
 | New chapter | Row on `learn/<domain>.md` |
 | New folio | `practice/<folio>.md` with five domain links |
 | New YouTube video | `videos/<slug>.md` + `topics/<slug>.md` (create or append). Optional: link a roadmap |
-| New roadmap | `roadmaps/<name>.md` Steps 1-5. Beginner explanation, then public **Links**. GitHub SVG from `library/github-visuals.md`. Insight Veda only as `/chapters?domain=`. No Practice. No per-chapter URLs. |
+| New roadmap | `roadmaps/<name>.md` like RAG. Teach, then `Topic ([link](url))`. Best write-up first. Papers in `references/`. |
+| New paper | Row in `references/rag-papers.md` per CONTRIBUTING.md |
 | Profile change | `CONNECT.md` |
 
 Never: per-scenario files, `/learn` or `/practice` site paths, private GitHub, `videos/worlds/`.
@@ -53,5 +54,5 @@ GitHub only: [library/github-visuals.md](../../../library/github-visuals.md) (pa
 
 - [ ] No per-scenario files, no worlds folder
 - [ ] Topics, not “series required”
-- [ ] Roadmaps are five steps; RAG style: explain, then links; domain not chapter; no Practice
+- [ ] Roadmaps: `Topic ([link](url))`, no brand labels, no Practice
 - [ ] No private repos

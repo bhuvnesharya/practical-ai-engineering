@@ -22,9 +22,9 @@ There is no magic token size. Start from the questions people actually ask. If t
 
 **Links**
 
-- [Chunking strategies (Pinecone)](https://www.pinecone.io/learn/chunking-strategies/)
-- [Text splitters (LangChain)](https://python.langchain.com/docs/concepts/text_splitters/)
-- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
+1. Chunking and overlap ([link](https://insightveda.com/chapters?chapter=ch-chunking-overlap))
+2. Chunking strategies ([link](https://www.pinecone.io/learn/chunking-strategies/))
+3. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 2 — Index
 
@@ -34,9 +34,9 @@ If you cannot say “this sentence came from Returns, page 4,” you cannot debu
 
 **Links**
 
-- [What is a vector database? (Pinecone)](https://www.pinecone.io/learn/vector-database/)
-- [Retrieval-Augmented Generation (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
-- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
+1. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks ([link](https://arxiv.org/abs/2005.11401))
+2. What is a vector database? ([link](https://www.pinecone.io/learn/vector-database/))
+3. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 3 — Retrieve
 
@@ -46,9 +46,8 @@ If the right clause is not in those hits, the model cannot honestly use it. Retr
 
 **Links**
 
-- [Retrieval-Augmented Generation for Knowledge-Intensive NLP](https://arxiv.org/abs/2005.11401)
-- [Retrieval (LangChain)](https://python.langchain.com/docs/concepts/retrieval/)
-- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
+1. Retrieval (concepts) ([link](https://python.langchain.com/docs/concepts/retrieval/))
+2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 4 — Ground
 
@@ -58,9 +57,8 @@ This is the difference between “the model recalled a policy” and “the syst
 
 **Links**
 
-- [Retrieval-augmented generation (Pinecone)](https://www.pinecone.io/learn/retrieval-augmented-generation/)
-- [Understanding RAG (LlamaIndex)](https://docs.llamaindex.ai/en/stable/understanding/)
-- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
+1. Retrieval-augmented generation ([link](https://www.pinecone.io/learn/retrieval-augmented-generation/))
+2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 5 — Harden
 
@@ -74,6 +72,7 @@ If you cannot measure those, a smarter retriever will only fail faster.
 
 **Links**
 
-- [RAGAS (RAG evaluation)](https://docs.ragas.io/en/stable/)
-- [OWASP Top 10 for LLM applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
-- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge) · [Security & guardrails](https://insightveda.com/chapters?domain=security-guardrails)
+1. Authentication for AI applications ([link](https://insightveda.com/chapters?chapter=ch-auth-ai-applications))
+2. Automated evaluation of RAG ([link](https://arxiv.org/abs/2309.15217))
+3. OWASP Top 10 for LLM applications ([link](https://owasp.org/www-project-top-10-for-large-language-model-applications/))
+4. RAG papers ([link](../references/rag-papers.md))
