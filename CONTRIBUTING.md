@@ -33,7 +33,7 @@ Maintainers may rewrite the one-liner, move the row, or reject it. The table sta
 Do not add new chapter URLs to `roadmaps/rag.md`. That page stays five steps.
 
 1. Open `references/rag-chapters.md`.
-2. Add `Topic title ([link](url))` under the matching step.
+2. Add `Topic title ([link](url))` under the matching `## Step N. …` heading. Create the heading if it is not there yet.
 3. Title is the topic, not a brand.
 
 ## Review bar

@@ -53,13 +53,6 @@ Follow [library/github-visuals.md](../../../library/github-visuals.md) for the S
 
 Explain each step for a beginner. Then **Links** as `Title ([link](url))` — not the whole line as a hyperlink, not a brand name.
 
-If you wrote a public chapter that explains a step, add it to `references/rag-chapters.md`, not to the five-step page.
+Public markdown is for readers. Maintainer rules live in CONTRIBUTING.md and `.cursor/skills/maintain-hub/`, not in the page body.
 
-```markdown
-**Links**
-
-1. RAG chapters ([link](../references/rag-chapters.md#step-1-chunk))
-2. RAG papers ([link](../references/rag-papers.md))
-```
-
-See `roadmaps/rag.md`. No Practice. No “Insight Veda:” labels. Vendor blogs are last resort; see CONTRIBUTING.md.
+Roadmap pages: five steps of teaching. Point once, near the top, at the chapters list and the papers list. Do not repeat those two links under every step.

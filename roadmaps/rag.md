@@ -12,7 +12,7 @@ question --> retrieve passages --> add them to the prompt --> model --> answer f
 
 Work the steps in order. A better embedding model will not save a bad chunk.
 
-Lessons for these steps: [RAG chapters](../references/rag-chapters.md). Papers: [RAG papers](../references/rag-papers.md).
+Lessons for each step ([link](../references/rag-chapters.md)). Foundational papers ([link](../references/rag-papers.md)).
 
 ## Step 1 — Chunk
 
@@ -22,21 +22,11 @@ If you cut mid-sentence, retrieval returns fragments. If a rule and its exceptio
 
 There is no magic token size. Start from the questions people actually ask. If they need a short procedure, the chunk must hold that procedure.
 
-**Links**
-
-1. RAG chapters ([link](../references/rag-chapters.md#step-1-chunk))
-2. RAG papers ([link](../references/rag-papers.md))
-
 ## Step 2 — Index
 
 You store those chunks somewhere you can search: a vector index, a keyword index, or both. Each record should carry **metadata** you can read when an answer is wrong: source file, section title, date.
 
 If you cannot say “this sentence came from Returns, page 4,” you cannot debug RAG. You will only argue with the model.
-
-**Links**
-
-1. RAG chapters ([link](../references/rag-chapters.md#step-2-index))
-2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 3 — Retrieve
 
@@ -44,21 +34,11 @@ At question time you do not load the corpus. You **search** and take the top pas
 
 If the right clause is not in those hits, the model cannot honestly use it. Retrieval quality is the ceiling for answer quality.
 
-**Links**
-
-1. RAG chapters ([link](../references/rag-chapters.md#step-3-retrieve))
-2. RAG papers ([link](../references/rag-papers.md))
-
 ## Step 4 — Ground
 
 The model now sees the user question **plus** the retrieved text. The instruction is: answer from that text. If the passages do not contain the answer, say you do not know. Point at the source when you can.
 
 This is the difference between “the model recalled a policy” and “the system showed the policy.” Guessing is not RAG.
-
-**Links**
-
-1. RAG chapters ([link](../references/rag-chapters.md#step-4-ground))
-2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 5 — Harden
 
@@ -69,8 +49,3 @@ Before you add agentic retrieval or a graph index, ask three production question
 3. **Eval** — for a small set of trusted questions, did we retrieve the right passage, and did the answer stay inside it?
 
 If you cannot measure those, a smarter retriever will only fail faster.
-
-**Links**
-
-1. RAG chapters ([link](../references/rag-chapters.md#step-5-harden))
-2. RAG papers ([link](../references/rag-papers.md))
