@@ -1,10 +1,10 @@
 ---
-description: Hub maintainer — this repo is a map, not a studio or course catalog.
+description: Public hub only — Insight Veda + YouTube. Never link private studio repos.
 alwaysApply: true
 ---
 
 # Practical AI Engineering
 
-Follow `AGENTS.md` and `.cursor/skills/maintain-hub/SKILL.md` for every change.
+Follow `AGENTS.md` and `.cursor/skills/maintain-hub/SKILL.md`.
 
-Do not copy diagrams or lessons into this repo. Link the studio and Insight Veda instead.
+This GitHub repo is a public index. Canonical Learn/Practice content lives on Insight Veda. Never link private recording or diagram repos.

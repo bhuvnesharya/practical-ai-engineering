@@ -2,36 +2,98 @@
 
 Copy the block. Replace `TODO`. Keep the heading order.
 
+## Learn domain (`learn/<domain>/README.md`)
+
+```markdown
+# TODO: domain name
+
+TODO: one sentence.
+
+**On Insight Veda:** [Learn](https://insightveda.com/learn) → this domain.
+
+## Chapters
+
+| # | Chapter | Practice (live folio) |
+| --- | --- | --- |
+| 01 | [TODO](./01-TODO.md) | [TODO](../../practice/TODO-folio/TODO-domain/) |
+```
+
+## Chapter (`learn/<domain>/<nn>-<slug>.md`)
+
+```markdown
+# TODO: chapter title
+
+**Domain:** [TODO](./README.md)  
+**Open:** [Learn on Insight Veda](https://insightveda.com/learn) → TODO domain → Chapter TODO  
+**Practice:** same domain under the live folio, e.g. [TODO](../../practice/brass-vernier/TODO-domain/)
+
+## In this chapter
+
+- TODO: one to three bullets. No full lesson text.
+
+## Related videos
+
+- none yet
+```
+
+## Practice index (`practice/README.md`)
+
+Live folio first, then earlier, then coming soon. Do not flatten all 25 cases onto this page.
+
+## Folio (`practice/<folio>/README.md`)
+
+```markdown
+# TODO: folio name
+
+**Status:** live | earlier | coming soon  
+**Line:** TODO tagline from Insight Veda  
+**Open:** [Practice](https://insightveda.com/practice)
+
+25 scenarios, five domains, five each.
+
+| Domain | Scenarios |
+| --- | --- |
+| [Agents & orchestration](./agents-orchestration/) | n/5 |
+```
+
+## Scenario (`practice/<folio>/<domain>/<nn>-<slug>.md`)
+
+```markdown
+# TODO: scenario title
+
+**Folio:** [TODO](../README.md)  
+**Domain:** [TODO](./README.md)  
+**Open:** [Practice](https://insightveda.com/practice) → TODO folio → TODO domain → Scenario TODO  
+**Learn:** [matching chapter](../../../learn/TODO-domain/TODO.md) if one exists
+
+## In this scenario
+
+- TODO: the decision, not the full prompt.
+```
+
 ## Video (`videos/<slug>.md`)
 
 ```markdown
 # TODO: title matching YouTube
 
-**Watch:** [TODO: title](https://www.youtube.com/watch?v=TODO) · TODO: YYYY-MM-DD  
-**Series:** [TODO series name](../series/TODO.md)  
-**Studio:** [agentic-ai-system-design](https://github.com/bhuvnesharya/agentic-ai-system-design)
+**Watch:** [TODO](https://www.youtube.com/watch?v=TODO) · TODO: YYYY-MM-DD  
+**Series:** [TODO](../series/TODO.md)
 
 ## In this video
 
-- TODO: the failure
-- TODO: what we added
-- TODO: where it sits in the system
+- TODO
+
+## Learn
+
+- [TODO domain or chapter](../learn/TODO/)
 
 ## Practice
 
-- Insight Veda: TODO or "none yet"
+- [TODO folio / domain](../practice/TODO/)
 
-## Scenario
+## Teaching world
 
-- [TODO](../scenarios/TODO.md)
-
-## Diagrams
-
-- Deck / SVG: link into the studio repo path, not a copied file
-
-## Next
-
-- [TODO next video](./TODO.md)
+- [TODO](./worlds/TODO.md) if the video uses a recurring story
 ```
 
 ## Series (`series/<slug>.md`)
@@ -39,56 +101,29 @@ Copy the block. Replace `TODO`. Keep the heading order.
 ```markdown
 # TODO: series title
 
-One paragraph: what the series builds, who the customer is, what "done" means.
+One paragraph.
 
 ## Videos
 
-1. [Part 1](../videos/TODO.md) — TODO one line
-2. [Part 2](../videos/TODO.md) — TODO one line
+1. [Part 1](../videos/TODO.md) — TODO
 
-## Scenario
+## Learn / Practice
 
-[TODO](../scenarios/TODO.md)
-
-## Studio
-
-https://github.com/bhuvnesharya/agentic-ai-system-design
+Point at domains and the live folio. Never link a private repo.
 ```
 
-## Scenario (`scenarios/<slug>.md`)
+## YouTube world (`videos/worlds/<slug>.md`)
 
 ```markdown
 # TODO: world name
 
-**Product:** TODO  
-**Customer surface:** TODO  
-**Ops surface:** TODO  
-**Customer:** TODO
-
-## Why this story
-
-TODO: one paragraph. Constraints that force architecture, not plot.
+Used only in YouTube walkthroughs. Not an Insight Veda folio.
 
 ## Recurring facts
 
-- TODO order ids, refund ids, people (HITL)
+- TODO
 
-## Used in
+## Videos
 
-- [TODO video](../videos/TODO.md)
-```
-
-## Pattern (`patterns/<slug>.md`)
-
-```markdown
-# TODO: pattern name
-
-**Failure:** TODO  
-**Block we add:** TODO  
-**Where it sits:** TODO
-
-## Related
-
-- Videos: TODO
-- Insight Veda: TODO
+- [TODO](../TODO.md)
 ```

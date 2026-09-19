@@ -1,10 +1,9 @@
 # Agentic AI System Design, Part 1: From a Chatbot to Tools, Agents, Approval, and RAG
 
 **Watch:** add the YouTube URL · 2026-09  
-**Series:** [Agentic AI System Design](../series/agentic-ai-system-design.md)  
-**Studio:** [presentation / Part 1 deck](https://github.com/bhuvnesharya/agentic-ai-system-design)
+**Series:** [Agentic AI System Design](../series/agentic-ai-system-design.md)
 
-Status: URL pending — paste the public watch link, then this row is ready for video descriptions.
+Status: URL pending — paste the public watch link before using this in a description.
 
 ## In this video
 
@@ -13,21 +12,23 @@ Status: URL pending — paste the public watch link, then this row is ready for 
 - Split one overloaded assistant into a coordinator and specialists (customer UX stays one Help chat)
 - Start refund RF-2291; a human in Ops approves before money moves
 - Email is a connector, not another chat bubble
-- Return policy is retrieved (RAG), not guessed — knowledge is not a tool
+- Return policy is retrieved, not guessed — knowledge is not a tool
 
 Part 1 means the assistant can do the job. It is not yet production.
 
+## Learn
+
+- [The agent loop and stop conditions](../learn/agents-orchestration/01-the-agent-loop-and-stop-conditions.md)
+- [Tools & integrations](../learn/tools-integrations/)
+
 ## Practice
 
-- Insight Veda: https://insightveda.com/
+- [Brass Vernier · The question that needs one lookup](../practice/brass-vernier/agents-orchestration/01-the-question-that-needs-one-lookup.md)
+- [The support path that needs a human](../practice/brass-vernier/agents-orchestration/04-the-support-path-that-needs-a-human.md)
 
-## Scenario
+## Teaching world
 
-- [Fictional Bazaar](../scenarios/fictional-bazaar.md)
-
-## Diagrams
-
-- Studio repo: https://github.com/bhuvnesharya/agentic-ai-system-design
+- [Fictional Bazaar](./worlds/fictional-bazaar.md)
 
 ## Next
 

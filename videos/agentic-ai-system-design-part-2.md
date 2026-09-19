@@ -1,8 +1,7 @@
 # Agentic AI System Design, Part 2: Memory, Auth, PII, Evals, and Observability
 
 **Watch:** add the YouTube URL · 2026-09-19  
-**Series:** [Agentic AI System Design](../series/agentic-ai-system-design.md)  
-**Studio:** [Part 2 deck](https://github.com/bhuvnesharya/agentic-ai-system-design/tree/main/presentations/agentic-ai-system-design-part-2)
+**Series:** [Agentic AI System Design](../series/agentic-ai-system-design.md)
 
 Status: URL pending — paste the public watch link when the video is up.
 
@@ -17,18 +16,19 @@ Status: URL pending — paste the public watch link when the video is up.
 - Traces, monitoring, and a daily cost cap
 - Close: the production map of the same Help chat
 
+## Learn
+
+- [Security & guardrails](../learn/security-guardrails/)
+- [Data & knowledge](../learn/data-knowledge/)
+
 ## Practice
 
-- Insight Veda: https://insightveda.com/
+- [Brass Vernier](../practice/brass-vernier/README.md) — security and data domains fill in as those scenarios are catalogued
 
-## Scenario
+## Teaching world
 
-- [Fictional Bazaar](../scenarios/fictional-bazaar.md)
-
-## Diagrams
-
-- Production close diagram lives in the studio repo (`assets/diagrams/p2-08-production.svg`)
+- [Fictional Bazaar](./worlds/fictional-bazaar.md)
 
 ## Next
 
-- Watch [Part 1](./agentic-ai-system-design-part-1.md) first if the coordinator, HITL, or RAG blocks are new.
+- Watch [Part 1](./agentic-ai-system-design-part-1.md) first if the coordinator, HITL, or retrieval blocks are new.
