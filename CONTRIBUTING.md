@@ -7,9 +7,8 @@ This repo is a **public map** for people who want to design AI systems that actu
 | Kind | Example | How |
 | --- | --- | --- |
 | Paper for a table | A RAG eval paper with an arXiv link | Add a row to `references/rag-papers.md` |
-| Canonical doc | Original RAG paper, OWASP LLM Top 10 | Link it from the matching roadmap step |
-| Fix | Broken URL, clearer step, typo | PR with a one-line why |
-| New roadmap step resource | A *better* beginner explanation than what is there | Replace or put it **first** in that step’s list |
+| Lesson for a roadmap | A new public chapter on chunking, retrieval, … | Add a bullet under the matching step in `references/rag-chapters.md` (not on `roadmaps/rag.md`) |
+| Fix | Broken URL, typo | PR with a one-line why |
 
 ## What we will usually close
 
@@ -29,20 +28,13 @@ Vendor tutorials (Pinecone, LangChain, LlamaIndex) are not the default. Prefer a
 
 Maintainers may rewrite the one-liner, move the row, or reject it. The table stays short on purpose.
 
-## How to add a link on a roadmap
+## How to add a lesson to a roadmap
 
-Roadmaps teach in the markdown. Links are optional extras.
+Do not add new chapter URLs to `roadmaps/rag.md`. That page stays five steps.
 
-Format (text, then a short `(link)`):
-
-```markdown
-- Chunking and overlap ([link](https://...))
-- RAG papers ([link](../references/rag-papers.md))
-```
-
-Do not wrap the whole sentence in the hyperlink. Do not label links with a product brand. Name the **topic** (what the reader gets).
-
-If you wrote a public chapter that explains the step better than the current first link, that chapter can go first. Still title it as the topic, not as a brand.
+1. Open `references/rag-chapters.md`.
+2. Add `Topic title ([link](url))` under the matching step.
+3. Title is the topic, not a brand.
 
 ## Review bar
 

@@ -53,12 +53,12 @@ Follow [library/github-visuals.md](../../../library/github-visuals.md) for the S
 
 Explain each step for a beginner. Then **Links** as `Title ([link](url))` — not the whole line as a hyperlink, not a brand name.
 
-If a public chapter on insightveda.com is the clearest write-up for that step, put it first, titled as the topic (e.g. Chunking and overlap). Papers belong in `references/` and are cited as `RAG papers ([link](../references/rag-papers.md))`.
+If you wrote a public chapter that explains a step, add it to `references/rag-chapters.md`, not to the five-step page.
 
 ```markdown
 **Links**
 
-1. Chunking and overlap ([link](https://insightveda.com/chapters?chapter=ch-chunking-overlap))
+1. RAG chapters ([link](../references/rag-chapters.md#step-1-chunk))
 2. RAG papers ([link](../references/rag-papers.md))
 ```
 

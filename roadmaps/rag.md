@@ -12,6 +12,8 @@ question --> retrieve passages --> add them to the prompt --> model --> answer f
 
 Work the steps in order. A better embedding model will not save a bad chunk.
 
+Lessons for these steps: [RAG chapters](../references/rag-chapters.md). Papers: [RAG papers](../references/rag-papers.md).
+
 ## Step 1 — Chunk
 
 Your source is a PDF, a wiki, or a policy doc. The index cannot store it as one blob. You split it into **chunks**: pieces small enough to search, large enough to still mean something.
@@ -22,9 +24,8 @@ There is no magic token size. Start from the questions people actually ask. If t
 
 **Links**
 
-1. Chunking and overlap ([link](https://insightveda.com/chapters?chapter=ch-chunking-overlap))
-2. Chunking strategies ([link](https://www.pinecone.io/learn/chunking-strategies/))
-3. RAG papers ([link](../references/rag-papers.md))
+1. RAG chapters ([link](../references/rag-chapters.md#step-1-chunk))
+2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 2 — Index
 
@@ -34,9 +35,8 @@ If you cannot say “this sentence came from Returns, page 4,” you cannot debu
 
 **Links**
 
-1. Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks ([link](https://arxiv.org/abs/2005.11401))
-2. What is a vector database? ([link](https://www.pinecone.io/learn/vector-database/))
-3. RAG papers ([link](../references/rag-papers.md))
+1. RAG chapters ([link](../references/rag-chapters.md#step-2-index))
+2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 3 — Retrieve
 
@@ -46,7 +46,7 @@ If the right clause is not in those hits, the model cannot honestly use it. Retr
 
 **Links**
 
-1. Retrieval (concepts) ([link](https://python.langchain.com/docs/concepts/retrieval/))
+1. RAG chapters ([link](../references/rag-chapters.md#step-3-retrieve))
 2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 4 — Ground
@@ -57,7 +57,7 @@ This is the difference between “the model recalled a policy” and “the syst
 
 **Links**
 
-1. Retrieval-augmented generation ([link](https://www.pinecone.io/learn/retrieval-augmented-generation/))
+1. RAG chapters ([link](../references/rag-chapters.md#step-4-ground))
 2. RAG papers ([link](../references/rag-papers.md))
 
 ## Step 5 — Harden
@@ -72,7 +72,5 @@ If you cannot measure those, a smarter retriever will only fail faster.
 
 **Links**
 
-1. Authentication for AI applications ([link](https://insightveda.com/chapters?chapter=ch-auth-ai-applications))
-2. Automated evaluation of RAG ([link](https://arxiv.org/abs/2309.15217))
-3. OWASP Top 10 for LLM applications ([link](https://owasp.org/www-project-top-10-for-large-language-model-applications/))
-4. RAG papers ([link](../references/rag-papers.md))
+1. RAG chapters ([link](../references/rag-chapters.md#step-5-harden))
+2. RAG papers ([link](../references/rag-papers.md))

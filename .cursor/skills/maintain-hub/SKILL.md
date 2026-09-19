@@ -31,7 +31,7 @@ Domain ids: `agentic-architecture`, `data-knowledge`, `tools-integrations`, `pro
 | New folio | `practice/<folio>.md` with five domain links |
 | New YouTube video | `videos/<slug>.md` + `topics/<slug>.md` (create or append). Optional: link a roadmap |
 | New roadmap | `roadmaps/<name>.md` like RAG. Teach, then `Topic ([link](url))`. Best write-up first. Papers in `references/`. |
-| New paper | Row in `references/rag-papers.md` per CONTRIBUTING.md |
+| New lesson for a roadmap | Bullet on `references/rag-chapters.md` under the matching step |
 | Profile change | `CONNECT.md` |
 
 Never: per-scenario files, `/learn` or `/practice` site paths, private GitHub, `videos/worlds/`.

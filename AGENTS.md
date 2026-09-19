@@ -16,7 +16,7 @@ This repo is a **small public map**: YouTube, Insight Veda chapters, Insight Ved
 2. New chapter = one row on `learn/<domain>.md`.
 3. New folio = `practice/<folio>.md` with five domain links. No per-scenario files.
 4. New video = `videos/<slug>.md` plus a **topic** page (one video or several parts).
-5. Roadmaps: teach the step, then `Topic ([link](url))`. No product brand in the label. Best beginner write-up first (may be a public chapter). Papers go in `references/`. No Practice. See CONTRIBUTING.md. GitHub diagrams use `library/github-visuals.md`. RAG is the reference page until the others are rewritten.
+5. Roadmaps stay five steps. New lessons go on `references/rag-chapters.md` (and later `*-chapters.md`), not on the roadmap page. Papers go on `references/rag-papers.md`. Link format: `Topic ([link](url))`. No Practice. GitHub diagrams: `library/github-visuals.md`.
 6. Update `README.md` What’s new.
 
 ## Voice

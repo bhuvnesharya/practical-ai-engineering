@@ -2,7 +2,7 @@
 
 Five-step paths. The page teaches the step. Extra reading uses `Title ([link](url))` — papers, docs, or a chapter named by **topic**, not by a product.
 
-Paper lists live under [references/](../references/README.md). GitHub diagrams use [library/github-visuals.md](../library/github-visuals.md), not YouTube slides.
+Paper lists and lesson lists live under [references/](../references/README.md). New chapters go on the chapters page, not on the five-step roadmap.
 
 PRs: [CONTRIBUTING.md](../CONTRIBUTING.md).
 
