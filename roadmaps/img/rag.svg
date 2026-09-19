@@ -1,45 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
-  <rect width="1920" height="1080" fill="#0B1220"/>
-  <text x="80" y="72" fill="#3D9B8F" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="18" letter-spacing="3">ROADMAP</text>
-  <text x="80" y="128" fill="#E8EEF8" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="40" font-weight="600">RAG</text>
-  <text x="80" y="176" fill="#8B97AD" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="22">Five steps from documents to a grounded answer you can trust.</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 640" width="100%" role="img" aria-label="RAG roadmap, five steps">
+  <rect width="1200" height="640" fill="#FAF7F2"/>
+  <line x1="48" y1="48" x2="1152" y2="48" stroke="#E4DDD2" stroke-width="1"/>
+  <text x="48" y="92" fill="#6A6158" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">RAG</text>
+  <text x="48" y="138" fill="#1F1B16" font-family="Georgia, Times New Roman, serif" font-size="34">From a document to a grounded answer</text>
+  <text x="48" y="176" fill="#6A6158" font-family="Georgia, Times New Roman, serif" font-size="18">Five steps. Each one is a system choice, not a library name.</text>
 
-  <g font-family="IBM Plex Sans, Segoe UI, sans-serif">
-    <rect x="80" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#8B97AD"/>
-    <text x="230" y="430" text-anchor="middle" fill="#3D9B8F" font-size="14" letter-spacing="2">STEP 1</text>
-    <text x="230" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Chunk</text>
-    <text x="230" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Split sources</text>
-    <text x="230" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Keep meaning</text>
+  <line x1="108" y1="360" x2="1092" y2="360" stroke="#1F1B16" stroke-width="1.5"/>
 
-    <rect x="440" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#3D9B8F"/>
-    <text x="590" y="430" text-anchor="middle" fill="#3D9B8F" font-size="14" letter-spacing="2">STEP 2</text>
-    <text x="590" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Index</text>
-    <text x="590" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Store chunks</text>
-    <text x="590" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Plus metadata</text>
+  <g font-family="Georgia, Times New Roman, serif" text-anchor="middle">
+    <circle cx="108" cy="360" r="22" fill="#FAF7F2" stroke="#9A4A2A" stroke-width="2"/>
+    <text x="108" y="367" fill="#9A4A2A" font-size="16">1</text>
+    <text x="108" y="430" fill="#1F1B16" font-size="20">Chunk</text>
+    <text x="108" y="458" fill="#6A6158" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">split sources</text>
 
-    <rect x="800" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#3D9B8F"/>
-    <text x="950" y="430" text-anchor="middle" fill="#3D9B8F" font-size="14" letter-spacing="2">STEP 3</text>
-    <text x="950" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Retrieve</text>
-    <text x="950" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Find passages</text>
-    <text x="950" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Not the whole doc</text>
+    <circle cx="354" cy="360" r="22" fill="#FAF7F2" stroke="#9A4A2A" stroke-width="2"/>
+    <text x="354" y="367" fill="#9A4A2A" font-size="16">2</text>
+    <text x="354" y="430" fill="#1F1B16" font-size="20">Index</text>
+    <text x="354" y="458" fill="#6A6158" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">store + metadata</text>
 
-    <rect x="1160" y="380" width="300" height="280" rx="16" fill="#1A2438" stroke="#5B8DEF"/>
-    <text x="1310" y="430" text-anchor="middle" fill="#5B8DEF" font-size="14" letter-spacing="2">STEP 4</text>
-    <text x="1310" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Ground</text>
-    <text x="1310" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Answer from hits</text>
-    <text x="1310" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Cite the source</text>
+    <circle cx="600" cy="360" r="22" fill="#FAF7F2" stroke="#9A4A2A" stroke-width="2"/>
+    <text x="600" y="367" fill="#9A4A2A" font-size="16">3</text>
+    <text x="600" y="430" fill="#1F1B16" font-size="20">Retrieve</text>
+    <text x="600" y="458" fill="#6A6158" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">find passages</text>
 
-    <rect x="1520" y="380" width="320" height="280" rx="16" fill="#1A2438" stroke="#D4A054"/>
-    <text x="1680" y="430" text-anchor="middle" fill="#D4A054" font-size="14" letter-spacing="2">STEP 5</text>
-    <text x="1680" y="490" text-anchor="middle" fill="#E8EEF8" font-size="24" font-weight="600">Production</text>
-    <text x="1680" y="534" text-anchor="middle" fill="#8B97AD" font-size="16">Access, freshness</text>
-    <text x="1680" y="564" text-anchor="middle" fill="#8B97AD" font-size="16">Eval the retrieval</text>
+    <circle cx="846" cy="360" r="22" fill="#FAF7F2" stroke="#9A4A2A" stroke-width="2"/>
+    <text x="846" y="367" fill="#9A4A2A" font-size="16">4</text>
+    <text x="846" y="430" fill="#1F1B16" font-size="20">Ground</text>
+    <text x="846" y="458" fill="#6A6158" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">answer from hits</text>
+
+    <circle cx="1092" cy="360" r="22" fill="#FAF7F2" stroke="#9A4A2A" stroke-width="2"/>
+    <text x="1092" y="367" fill="#9A4A2A" font-size="16">5</text>
+    <text x="1092" y="430" fill="#1F1B16" font-size="20">Harden</text>
+    <text x="1092" y="458" fill="#6A6158" font-family="Segoe UI, Helvetica, sans-serif" font-size="13">access and eval</text>
   </g>
 
-  <path d="M380,520 L428,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
-  <path d="M740,520 L788,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
-  <path d="M1100,520 L1148,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
-  <path d="M1460,520 L1508,520" stroke="#9AA6BB" stroke-width="2" fill="none"/>
-
-  <text x="80" y="980" fill="#8B97AD" font-family="IBM Plex Sans, Segoe UI, sans-serif" font-size="22">Policy is retrieved. It is not a tool and it is not guessed.</text>
+  <text x="48" y="580" fill="#6A6158" font-family="Georgia, Times New Roman, serif" font-size="16">The model never sees the whole handbook. It sees the passages you retrieved.</text>
 </svg>

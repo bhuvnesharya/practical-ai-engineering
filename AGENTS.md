@@ -16,7 +16,7 @@ This repo is a **small public map**: YouTube, Insight Veda chapters, Insight Ved
 2. New chapter = one row on `learn/<domain>.md`.
 3. New folio = `practice/<folio>.md` with five domain links. No per-scenario files.
 4. New video = `videos/<slug>.md` plus a **topic** page (one video or several parts).
-5. Roadmaps stay five steps. Reuse `roadmaps/img/*.svg` on video slides. Link Insight Veda when a step exists.
+5. Roadmaps: five beginner steps, public links first, Insight Veda as a domain link only. GitHub diagrams use `library/github-visuals.md`, not the YouTube deck. No Practice on roadmap pages. RAG is the reference page until the others are rewritten.
 6. Update `README.md` What’s new.
 
 ## Voice

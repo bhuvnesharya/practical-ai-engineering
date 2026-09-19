@@ -1,8 +1,8 @@
 # Roadmaps
 
-Five-step paths to systems you can run. Not a 90-link catalog. Not a hype stack.
+Five-step paths to systems you can run. Explain the step, then list a few public links. Insight Veda, when listed, is one link among others (the domain, not a single chapter).
 
-Each file has a 1920x1080 diagram in `img/` — the same frame you can put on a YouTube slide.
+GitHub diagrams use [library/github-visuals.md](../library/github-visuals.md). They are not YouTube slides.
 
 | Roadmap | What it gets you to |
 | --- | --- |
@@ -10,6 +10,4 @@ Each file has a 1920x1080 diagram in `img/` — the same frame you can put on a 
 | [RAG](rag.md) | Chunk → index → retrieve → ground → eval and access |
 | [Agentic AI](agentic-ai.md) | Chat → tools → loop → specialists → production |
 
-When a step already has an Insight Veda chapter or folio domain, the step links it. Empty links stay empty until that ships.
-
-Future videos on a roadmap should reuse the diagram, then walk the steps in order.
+RAG is the first page on the GitHub visual system. Agentic AI and Generative AI still use the older deck-style images until they are rewritten the same way.

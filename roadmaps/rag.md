@@ -1,46 +1,79 @@
 # RAG roadmap
 
-Put the model on *your* documents without stuffing the handbook into the prompt.
+A language model does not contain your return policy, your runbooks, or last week’s order notes. If you paste the whole handbook into the prompt, you hit context limits and still miss the clause that matters.
+
+RAG (retrieval-augmented generation) is the simple fix: **find a few relevant passages first, then ask the model to answer from those passages.**
 
 ![RAG roadmap](img/rag.svg)
 
-Policy is retrieved. It is not a tool.
+```
+question --> retrieve passages --> add them to the prompt --> model --> answer from those passages
+```
+
+Work the steps in order. A better embedding model will not save a bad chunk.
 
 ## Step 1 — Chunk
 
-Split sources into pieces that still mean something. Overlap at boundaries. Fix this before you buy a fancier index.
+Your source is a PDF, a wiki, or a policy doc. The index cannot store it as one blob. You split it into **chunks**: pieces small enough to search, large enough to still mean something.
 
-**Read:** [Chunking and overlap](https://insightveda.com/chapters?chapter=ch-chunking-overlap)  
-**Practice:** [Brass Vernier · Data & knowledge](https://insightveda.com/scenarios?set=brass-vernier&domain=data-knowledge)
+If you cut mid-sentence, retrieval returns fragments. If a rule and its exception land in two chunks with no overlap, the model may see the rule and miss the exception. Overlap (repeating the last lines of chunk A at the start of chunk B) is a simple way to protect those boundaries.
+
+There is no magic token size. Start from the questions people actually ask. If they need a short procedure, the chunk must hold that procedure.
+
+**Links**
+
+- [Chunking strategies (Pinecone)](https://www.pinecone.io/learn/chunking-strategies/)
+- [Text splitters (LangChain)](https://python.langchain.com/docs/concepts/text_splitters/)
+- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
 
 ## Step 2 — Index
 
-Store chunks with enough metadata to debug a bad answer (source, section).
+You store those chunks somewhere you can search: a vector index, a keyword index, or both. Each record should carry **metadata** you can read when an answer is wrong: source file, section title, date.
 
-**Read:** [Chunking and overlap](https://insightveda.com/chapters?chapter=ch-chunking-overlap)  
-**Practice:** [Brass Vernier · Data & knowledge](https://insightveda.com/scenarios?set=brass-vernier&domain=data-knowledge)
+If you cannot say “this sentence came from Returns, page 4,” you cannot debug RAG. You will only argue with the model.
+
+**Links**
+
+- [What is a vector database? (Pinecone)](https://www.pinecone.io/learn/vector-database/)
+- [Retrieval-Augmented Generation (Lewis et al., 2020)](https://arxiv.org/abs/2005.11401)
+- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
 
 ## Step 3 — Retrieve
 
-Return the passages that match the question. Not the whole corpus.
+At question time you do not load the corpus. You **search** and take the top passages. Vector search finds similar meaning. Keyword search finds exact names, ids, and clause numbers. Many production systems use both (hybrid), then keep the top few.
 
-**Read:** [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)  
-**Practice:** [Brass Vernier · Data & knowledge](https://insightveda.com/scenarios?set=brass-vernier&domain=data-knowledge)
+If the right clause is not in those hits, the model cannot honestly use it. Retrieval quality is the ceiling for answer quality.
+
+**Links**
+
+- [Retrieval-Augmented Generation for Knowledge-Intensive NLP](https://arxiv.org/abs/2005.11401)
+- [Retrieval (LangChain)](https://python.langchain.com/docs/concepts/retrieval/)
+- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
 
 ## Step 4 — Ground
 
-The model answers from retrieved hits and can point at the source. If the hit is missing, say so.
+The model now sees the user question **plus** the retrieved text. The instruction is: answer from that text. If the passages do not contain the answer, say you do not know. Point at the source when you can.
 
-**Watch:** [Agentic AI system design, Part 1](../videos/agentic-ai-system-design-part-1.md) (policy is retrieved, not guessed)
+This is the difference between “the model recalled a policy” and “the system showed the policy.” Guessing is not RAG.
 
-## Step 5 — Production
+**Links**
 
-Who may see this chunk. Is the index fresh. Did retrieval actually return the right clause. Measure that before you add agentic retrieval.
+- [Retrieval-augmented generation (Pinecone)](https://www.pinecone.io/learn/retrieval-augmented-generation/)
+- [Understanding RAG (LlamaIndex)](https://docs.llamaindex.ai/en/stable/understanding/)
+- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge)
 
-**Read:** [Authentication for AI applications](https://insightveda.com/chapters?chapter=ch-auth-ai-applications)  
-**Practice:** [Brass Vernier · Security & guardrails](https://insightveda.com/scenarios?set=brass-vernier&domain=security-guardrails)
+## Step 5 — Harden
 
-## Related
+Before you add agentic retrieval or a graph index, ask three production questions:
 
-- [Agentic AI roadmap](agentic-ai.md) — retrieval sits inside step 4 there
-- [Generative AI roadmap](gen-ai.md) — RAG is step 3 there
+1. **Access** — may this user see this chunk? Retrieval must follow the same rules as your files.
+2. **Freshness** — is the index the current policy, or last quarter’s PDF?
+3. **Eval** — for a small set of trusted questions, did we retrieve the right passage, and did the answer stay inside it?
+
+If you cannot measure those, a smarter retriever will only fail faster.
+
+**Links**
+
+- [RAGAS (RAG evaluation)](https://docs.ragas.io/en/stable/)
+- [OWASP Top 10 for LLM applications](https://owasp.org/www-project-top-10-for-large-language-model-applications/)
+- Insight Veda: [Data & knowledge](https://insightveda.com/chapters?domain=data-knowledge) · [Security & guardrails](https://insightveda.com/chapters?domain=security-guardrails)

@@ -49,20 +49,25 @@ One paragraph. Can be a single video.
 
 ## Roadmap (`roadmaps/<name>.md`)
 
+Follow [library/github-visuals.md](../../../library/github-visuals.md) for the SVG. Do not copy YouTube deck colors.
+
+Explain each step for a beginner. Then **Links** (public articles, papers, docs first). Insight Veda is optional and must be the **domain** (`/chapters?domain=`), never a single chapter and never Practice.
+
 ```markdown
 # TODO title
 
-One sentence outcome.
+Beginner intro. What problem this roadmap solves.
 
 ![TODO](img/TODO.svg)
 
 ## Step 1 — TODO
 
-What you can ship. What still fails.
+A few short paragraphs. What it is. What goes wrong if you skip it.
 
-**Read:** Insight Veda chapter URL or "none yet"  
-**Practice:** folio x domain URL or "none yet"  
-**Watch:** video URL if it exists
+**Links**
+
+- [Public resource](https://...)
+- Insight Veda: [Domain name](https://insightveda.com/chapters?domain=TODO)
 ```
 
-Five steps. Production is usually Step 5. SVG is 1920x1080, five boxes, same palette as existing `img/` files.
+Five steps. See `roadmaps/rag.md` as the current example. Do not add Practice rows.

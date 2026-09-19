@@ -30,7 +30,7 @@ Domain ids: `agentic-architecture`, `data-knowledge`, `tools-integrations`, `pro
 | New chapter | Row on `learn/<domain>.md` |
 | New folio | `practice/<folio>.md` with five domain links |
 | New YouTube video | `videos/<slug>.md` + `topics/<slug>.md` (create or append). Optional: link a roadmap |
-| New roadmap | `roadmaps/<name>.md` Steps 1-5, SVG in `roadmaps/img/`, Insight Veda links where they exist |
+| New roadmap | `roadmaps/<name>.md` Steps 1-5. Beginner explanation, then public **Links**. GitHub SVG from `library/github-visuals.md`. Insight Veda only as `/chapters?domain=`. No Practice. No per-chapter URLs. |
 | Profile change | `CONNECT.md` |
 
 Never: per-scenario files, `/learn` or `/practice` site paths, private GitHub, `videos/worlds/`.
@@ -47,11 +47,11 @@ Never: per-scenario files, `/learn` or `/practice` site paths, private GitHub, `
 
 ## Roadmap diagrams
 
-Navy `#0B1220`, boxes `#1A2438`, teal `#3D9B8F`, muted `#8B97AD`. Five boxes, short labels, no clip-art, no hype words. Same SVG on GitHub and as a video slide.
+GitHub only: [library/github-visuals.md](../../../library/github-visuals.md) (paper, ink, rust accent, ~1200x640). Do not reuse YouTube navy slides. Do not put GitHub SVGs on OBS.
 
 ## Checks
 
 - [ ] No per-scenario files, no worlds folder
 - [ ] Topics, not “series required”
-- [ ] Roadmaps are five steps max
+- [ ] Roadmaps are five steps; RAG style: explain, then links; domain not chapter; no Practice
 - [ ] No private repos

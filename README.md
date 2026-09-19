@@ -17,7 +17,7 @@ This GitHub repo is the **public map**. Full chapters and cases live on [Insight
 
 ## What's new
 
-- **Roadmaps** — [Generative AI](roadmaps/gen-ai.md), [RAG](roadmaps/rag.md), [Agentic AI](roadmaps/agentic-ai.md). Five steps each. Diagrams in `roadmaps/img/` for GitHub and for video slides.
+- **Roadmaps** — [RAG](roadmaps/rag.md) rewritten for GitHub (paper diagram, beginner steps, public links). Agentic / Gen AI still pending the same treatment.
 - **2026-09-19** — [Agentic AI system design, Part 2](videos/agentic-ai-system-design-part-2.md)
 - **2026-09** — [Agentic AI system design, Part 1](videos/agentic-ai-system-design-part-1.md)
 

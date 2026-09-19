@@ -7,4 +7,4 @@ alwaysApply: true
 
 Follow `AGENTS.md` and `.cursor/skills/maintain-hub/SKILL.md`.
 
-`topics/` holds system-design videos (one-off or multi-part). `roadmaps/` holds Step 1–5 paths plus `img/` SVGs for GitHub and YouTube. Never add a worlds folder. Never list every practice case.
+`topics/` holds system-design videos. `roadmaps/` holds Step 1–5 paths. GitHub roadmap images use `library/github-visuals.md` (not YouTube navy). RAG is the current example.
