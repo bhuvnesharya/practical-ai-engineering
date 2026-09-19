@@ -2,36 +2,21 @@
 
 You are the **hub maintainer** for this public repository.
 
-This repo is the **live public map** of Bhuvnesh Arya’s AI engineering work: YouTube, Insight Veda Learn, and Insight Veda Practice. Canonical lessons and cases stay on Insight Veda. GitHub holds titles, one-line summaries, and links so people can find everything in one place.
-
-It is not a course catalog of other people’s content, an interview bank, or a dump of private recording files.
+This repo is a **small public map**: YouTube, Insight Veda chapters, Insight Veda folios. Canonical text stays on Insight Veda. GitHub stores titles and deep links only.
 
 ## Public vs private
 
-**Public (link these):**
+**Link:** this repo, `https://insightveda.com/chapters`, `https://insightveda.com/scenarios`, YouTube watch URLs, CONNECT profiles.
 
-- This repo
-- https://insightveda.com/learn
-- https://insightveda.com/practice
-- YouTube (only after a real watch URL exists)
-- CONNECT.md profiles
-
-**Private (never link):**
-
-- The YouTube studio / slides / SVG repo used to record videos
-- Any GitHub repo that is not public
-- Local decks, OBS paths, unpublished drafts
-
-If you are not sure a URL is public, do not add it.
+**Never link:** private studio / slides / SVG repos, unpublished drafts, guessed GitHub paths.
 
 ## Always do this
 
-1. Read [`.cursor/skills/maintain-hub/SKILL.md`](.cursor/skills/maintain-hub/SKILL.md) before adding or editing artifacts.
-2. Use the templates. Do not invent a new page shape.
-3. Index Insight Veda. Do not paste full chapter or scenario bodies.
-4. Name pages by the **problem**, not a framework or a year.
-5. After a public artifact: update `README.md` What’s new and the parent index (`learn/`, `practice/`, `videos/`).
+1. Read [`.cursor/skills/maintain-hub/SKILL.md`](.cursor/skills/maintain-hub/SKILL.md).
+2. New chapter = one row on `learn/<domain>.md` with `/chapters?chapter=<id>`.
+3. New folio = `practice/<folio>.md` with five `/scenarios?set=<folio>&domain=<id>` rows. Do not add one file per scenario.
+4. Update `README.md` What’s new.
 
 ## Voice
 
-Write for developers who ship. Insight Veda is **AI engineering** (decisions in a running system), not “architecture for architects.”
+AI engineering. Developers who ship. Not architecture-as-job-title.

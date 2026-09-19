@@ -1,12 +1,12 @@
 # Practice
 
-Named **folios** on [Insight Veda Practice](https://insightveda.com/practice). Each folio is a pack of 25 scenarios across the same five Learn domains.
+Named **folios** on [Insight Veda](https://insightveda.com/scenarios). Each folio is 25 scenarios across the five Learn domains.
 
-The live folio is first. Earlier folios stay listed so people can keep practicing. Coming-soon folios are named but empty.
+This repo does **not** list every case. Each domain row links to that folio filtered to that domain (`/scenarios?set=…&domain=…`).
 
-| Folio | Status | Line |
-| --- | --- | --- |
-| [Brass Vernier](brass-vernier/) | Live | Measure the decision before the agent moves. |
-| [Iron Stylus](iron-stylus/) | Coming soon | Write the rule in the system, not only in the prompt. |
+| Folio | Status | Line | Open the set |
+| --- | --- | --- | --- |
+| [Brass Vernier](brass-vernier.md) | Live | Measure the decision before the agent moves. | https://insightveda.com/scenarios?set=brass-vernier |
+| [Iron Stylus](iron-stylus.md) | Coming soon | Write the rule in the system, not only in the prompt. | https://insightveda.com/scenarios?set=iron-stylus |
 
-A scenario page here is an index card. The full prompt, choices, and feedback stay on Insight Veda.
+All sets: https://insightveda.com/scenarios

@@ -3,27 +3,24 @@
 **Watch:** add the YouTube URL · 2026-09-19  
 **Series:** [Agentic AI System Design](../series/agentic-ai-system-design.md)
 
-Status: URL pending — paste the public watch link when the video is up.
+Status: URL pending.
 
 ## In this video
 
-- Priya comes back: load case RF-2291 (memory), then refresh Payments
-- “All orders of mine” needs authentication — a signed-in customer id
-- FB-10390 is Sana Khan’s: authorization refuses the shipment lookup. The model is not the security boundary
-- A card number in chat is masked before the coordinator or the model can see it
-- Company LLM first; a third-party model only gets a clean question
-- Golden set: replay a new prompt, score a system that can answer differently each time
-- Traces, monitoring, and a daily cost cap
-- Close: the production map of the same Help chat
+- Memory for RF-2291, then Payments
+- Authentication and authorization (the model is not the security boundary)
+- PII masking; company LLM first
+- Golden-set evals; traces, monitoring, cost cap
 
 ## Learn
 
-- [Security & guardrails](../learn/security-guardrails/)
-- [Data & knowledge](../learn/data-knowledge/)
+- [Authentication for AI applications](https://insightveda.com/chapters?chapter=ch-auth-ai-applications)
+- [Chunking and overlap](https://insightveda.com/chapters?chapter=ch-chunking-overlap)
 
 ## Practice
 
-- [Brass Vernier](../practice/brass-vernier/README.md) — security and data domains fill in as those scenarios are catalogued
+- [Brass Vernier · Security & guardrails](https://insightveda.com/scenarios?set=brass-vernier&domain=security-guardrails)
+- [Brass Vernier · Data & knowledge](https://insightveda.com/scenarios?set=brass-vernier&domain=data-knowledge)
 
 ## Teaching world
 
@@ -31,4 +28,4 @@ Status: URL pending — paste the public watch link when the video is up.
 
 ## Next
 
-- Watch [Part 1](./agentic-ai-system-design-part-1.md) first if the coordinator, HITL, or retrieval blocks are new.
+- [Part 1](./agentic-ai-system-design-part-1.md)

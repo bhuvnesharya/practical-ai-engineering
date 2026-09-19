@@ -3,28 +3,27 @@
 **Watch:** add the YouTube URL · 2026-09  
 **Series:** [Agentic AI System Design](../series/agentic-ai-system-design.md)
 
-Status: URL pending — paste the public watch link before using this in a description.
+Status: URL pending.
 
 ## In this video
 
 - A support chat with an LLM and no live data cannot answer “where is my order?”
 - Add an Order Status tool, then a second tool for shipment events
-- Split one overloaded assistant into a coordinator and specialists (customer UX stays one Help chat)
+- Split one overloaded assistant into a coordinator and specialists
 - Start refund RF-2291; a human in Ops approves before money moves
-- Email is a connector, not another chat bubble
-- Return policy is retrieved, not guessed — knowledge is not a tool
+- Return policy is retrieved, not guessed
 
 Part 1 means the assistant can do the job. It is not yet production.
 
 ## Learn
 
-- [The agent loop and stop conditions](../learn/agents-orchestration/01-the-agent-loop-and-stop-conditions.md)
-- [Tools & integrations](../learn/tools-integrations/)
+- [The agent loop and stop conditions](https://insightveda.com/chapters?chapter=ch-agent-loop-stop)
+- [Tool descriptions and schemas](https://insightveda.com/chapters?chapter=ch-tool-descriptions-schemas)
 
 ## Practice
 
-- [Brass Vernier · The question that needs one lookup](../practice/brass-vernier/agents-orchestration/01-the-question-that-needs-one-lookup.md)
-- [The support path that needs a human](../practice/brass-vernier/agents-orchestration/04-the-support-path-that-needs-a-human.md)
+- [Brass Vernier · Agents & orchestration](https://insightveda.com/scenarios?set=brass-vernier&domain=agentic-architecture)
+- [Brass Vernier · Tools & integrations](https://insightveda.com/scenarios?set=brass-vernier&domain=tools-integrations)
 
 ## Teaching world
 

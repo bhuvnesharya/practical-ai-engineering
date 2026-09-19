@@ -1,55 +1,54 @@
 ---
 name: maintain-hub
 description: >-
-  Creates and maintains the public Practical AI Engineering map: YouTube video
-  pages, Insight Veda Learn chapters (by domain), Practice folios and scenarios,
-  and CONNECT links. Use when a new chapter, folio, scenario, or video ships, or
-  when the user asks to update this repository.
+  Maintains the public Practical AI Engineering map: YouTube pages, Insight Veda
+  Learn chapter rows, Practice folio pages (domain links only), and CONNECT.
+  Use when a chapter or folio ships, a video ships, or the user asks to update
+  this repository. Do not create one file per practice scenario.
 ---
 
 # Maintain the hub
 
-Read [templates.md](templates.md) before writing a file. Read [conventions.md](conventions.md) for the Insight Veda tree and the public-only rule.
+Read [templates.md](templates.md) and [conventions.md](conventions.md).
 
-## How the public map is shaped
+## Shape
 
 ```
-YouTube          series/ + videos/ + videos/worlds/
-Insight Veda     learn/<domain>/<nn>-<slug>.md     (chapters grow inside a domain)
-                 practice/<folio>/<domain>/<nn>-<slug>.md
+learn/<domain-id>.md          chapter name + /chapters?chapter=id
+practice/<folio-id>.md        five rows: /scenarios?set=folio&domain=id
+videos/ + series/             YouTube
 ```
 
-Learn and Practice share the **same five domains**. A folio is the named pack of 25 scenarios (five per domain). New chapters append `02`, `03` in that domain folder. New practice work usually lands as a **new folio**, while older folios stay listed for practice.
+Domain ids (must match Insight Veda): `agentic-architecture`, `data-knowledge`, `tools-integrations`, `prompting-output`, `security-guardrails`.
 
 ## Decide the artifact
 
-| User intent | Create / update |
+| User intent | Do this |
 | --- | --- |
-| New YouTube video | `videos/<slug>.md`, series card, `videos/README.md`, README What’s new |
-| New YouTube series | `series/<slug>.md` |
-| YouTube teaching world (Priya, …) | `videos/worlds/<slug>.md` — not an Insight Veda folio |
-| New Learn domain (rare) | `learn/<domain>/README.md` + row on `learn/README.md` |
-| New chapter in an existing domain | `learn/<domain>/<nn>-<slug>.md`, update that domain README + `learn/README.md` counts |
-| New Practice folio | `practice/<folio>/README.md` + five domain folders, live folio listed first on `practice/README.md` |
-| New scenario | `practice/<folio>/<domain>/<nn>-<slug>.md`, bump folio and domain counts |
-| Profile / site URL | `CONNECT.md` only |
+| New chapter (usual: one per new folio, in a domain) | Add a row to `learn/<domain>.md`. Update What’s new. |
+| New folio | Add `practice/<folio-id>.md` with five domain links. List it on `practice/README.md` (live first). Add the matching chapter row(s). |
+| New YouTube video | `videos/<slug>.md` + series + What’s new. Point Learn/Practice at chapter and folio **URLs**, not private decks. |
+| YouTube world | `videos/worlds/<slug>.md` |
+| Profile change | `CONNECT.md` |
 
-Slug: lowercase, hyphens. Folio names stay human in the title (`Brass Vernier`) and kebab in the path (`brass-vernier`).
+**Never** add `practice/.../01-some-case.md`. The site already lists the five cases when you open `set` + `domain`.
 
-## Workflow
+## Insight Veda URLs
 
-1. Pick the row in the table.
-2. Copy the template. Fill `TODO`.
-3. **Insight Veda Open link:** prefer `https://insightveda.com/learn` or `https://insightveda.com/practice` plus the on-site path (Domain → Chapter, or Folio → Domain → Scenario). Add a deep URL only when the user gives a public permalink.
-4. **YouTube Watch link:** real `youtube.com/watch` only. Otherwise `Status: URL pending` and keep it off any “watch now” promo.
-5. Cross-link: chapter ↔ same-domain scenarios in the **live** folio; video ↔ learn domain and/or folio.
-6. Prepend README **What’s new** (newest first, max 8 bullets). Date `YYYY-MM-DD`.
-7. Never link a private GitHub repo. Never paste the full Insight Veda lesson or the full scenario prompt.
+| What | Pattern |
+| --- | --- |
+| All chapters | `https://insightveda.com/chapters` |
+| Domain chapters | `https://insightveda.com/chapters?domain=<domain-id>` |
+| One chapter | `https://insightveda.com/chapters?chapter=<chapter-id>` |
+| All sets | `https://insightveda.com/scenarios` |
+| One folio | `https://insightveda.com/scenarios?set=<folio-id>` |
+| Folio × domain | `https://insightveda.com/scenarios?set=<folio-id>&domain=<domain-id>` |
 
-## Checks before you stop
+There is no `/learn` or `/practice` path. Do not invent them.
 
-- [ ] Template headings used
-- [ ] No private studio / slides / SVG repo URLs
-- [ ] No full lesson or case dump
-- [ ] Parent README tables/counts updated
-- [ ] CONNECT.md is public URLs only
+## Checks
+
+- [ ] No per-scenario GitHub files
+- [ ] No `/learn` or `/practice` links
+- [ ] No private GitHub repos
+- [ ] Chapter and folio ids copied from Insight Veda, not guessed

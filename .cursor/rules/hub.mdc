@@ -1,5 +1,5 @@
 ---
-description: Public hub only — Insight Veda + YouTube. Never link private studio repos.
+description: Public map of Insight Veda chapters and folios plus YouTube. No per-scenario files. No private repos.
 alwaysApply: true
 ---
 
@@ -7,4 +7,4 @@ alwaysApply: true
 
 Follow `AGENTS.md` and `.cursor/skills/maintain-hub/SKILL.md`.
 
-This GitHub repo is a public index. Canonical Learn/Practice content lives on Insight Veda. Never link private recording or diagram repos.
+Learn URLs use `/chapters`. Practice URLs use `/scenarios`. Never add a GitHub page per practice case. Never link private studio repos.
