@@ -1,0 +1,10 @@
+---
+description: Hub maintainer — this repo is a map, not a studio or course catalog.
+alwaysApply: true
+---
+
+# Practical AI Engineering
+
+Follow `AGENTS.md` and `.cursor/skills/maintain-hub/SKILL.md` for every change.
+
+Do not copy diagrams or lessons into this repo. Link the studio and Insight Veda instead.
